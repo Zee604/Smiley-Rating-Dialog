@@ -15,13 +15,16 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: RaisedButton(
+      child: TextButton(
         onPressed: () {
           showDialog(
               barrierDismissible: true,
               context: context,
               builder: (context) => SmileyRatingDialog(
-                    title: Text('Smiley Dialog'),
+                    title: Text(
+                      'Smiley Dialog',
+                      textAlign: TextAlign.center,
+                    ),
                     starColor: Colors.red,
                     isRoundedButtons: true,
                     positiveButtonText: 'Ok',
@@ -29,7 +32,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     positiveButtonColor: Colors.amber,
                     negativeButtonColor: Colors.amber,
                     onCancelPressed: () => Navigator.pop(context),
-                    onSubmitPressed: (rating) {},
+                    onSubmitPressed: (rating) {
+                      Navigator.pop(context);
+                    },
                   ));
         },
         child: Text('Show Dialog'),

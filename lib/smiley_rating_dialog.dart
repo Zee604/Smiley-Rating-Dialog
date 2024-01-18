@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:smiley_rating_dialog/smiley_painter.dart';
 
 class SmileyRatingDialog extends StatefulWidget {
-
   // Color of star buttons
   final Color starColor;
 
@@ -34,11 +33,11 @@ class SmileyRatingDialog extends StatefulWidget {
 
   SmileyRatingDialog(
       {this.starColor = Colors.yellow,
-      this.title,
-      @required this.onSubmitPressed,
-      @required this.onCancelPressed,
-      @required this.positiveButtonText,
-      @required this.negativeButtonText,
+      required this.title,
+      required this.onSubmitPressed,
+      required this.onCancelPressed,
+      required this.positiveButtonText,
+      required this.negativeButtonText,
       this.isRoundedButtons = true,
       this.positiveButtonColor = Colors.amber,
       this.negativeButtonColor = Colors.amber});
@@ -48,7 +47,7 @@ class SmileyRatingDialog extends StatefulWidget {
 }
 
 class _SmileyRatingDialogState extends State<SmileyRatingDialog> {
-  int _rating = 0;
+  int _rating = 4;
 
   List<Widget> _starWidgets() {
     List<Widget> buttons = [];
@@ -73,7 +72,7 @@ class _SmileyRatingDialogState extends State<SmileyRatingDialog> {
     return AlertDialog(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
       title: widget.title,
-      contentPadding: EdgeInsets.all(20.0),
+      contentPadding: EdgeInsets.all(22.0),
       content: Column(
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
@@ -84,25 +83,39 @@ class _SmileyRatingDialogState extends State<SmileyRatingDialog> {
               painter: SmileyPainter(rating: _rating),
             ),
           ),
+          const SizedBox(
+            width: 0.0,
+            height: 18.0,
+          ),
           Row(children: _starWidgets()),
+          const SizedBox(
+            width: 0.0,
+            height: 8.0,
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
-              FlatButton(
-                shape: BeveledRectangleBorder(
-                    borderRadius: BorderRadius.circular(
-                        widget.isRoundedButtons ? 4.0 : 0.0)),
-                color: widget.positiveButtonColor,
+              TextButton(
+                style: TextButton.styleFrom(
+                  foregroundColor: widget.positiveButtonColor,
+                  textStyle: const TextStyle(fontSize: 20),
+                  shape: BeveledRectangleBorder(
+                      borderRadius: BorderRadius.circular(
+                          widget.isRoundedButtons ? 4.0 : 0.0)),
+                ),
                 onPressed: () {
                   widget.onSubmitPressed(_rating);
                 },
                 child: Text(widget.positiveButtonText),
               ),
-              FlatButton(
-                shape: BeveledRectangleBorder(
-                    borderRadius: BorderRadius.circular(
-                        widget.isRoundedButtons ? 4.0 : 0.0)),
-                color: widget.negativeButtonColor,
+              TextButton(
+                style: TextButton.styleFrom(
+                  foregroundColor: widget.negativeButtonColor,
+                  textStyle: const TextStyle(fontSize: 20),
+                  shape: BeveledRectangleBorder(
+                      borderRadius: BorderRadius.circular(
+                          widget.isRoundedButtons ? 4.0 : 0.0)),
+                ),
                 onPressed: () {
                   widget.onCancelPressed();
                 },
