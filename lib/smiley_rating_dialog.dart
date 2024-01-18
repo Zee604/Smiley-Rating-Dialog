@@ -1,7 +1,7 @@
-library smiley_rating_dialog;
+library smiley_rating_dialog_pro;
 
 import 'package:flutter/material.dart';
-import 'package:smiley_rating_dialog/smiley_painter.dart';
+import 'package:smiley_rating_dialog_pro/smiley_painter.dart';
 
 class SmileyRatingDialog extends StatefulWidget {
   // Color of star buttons

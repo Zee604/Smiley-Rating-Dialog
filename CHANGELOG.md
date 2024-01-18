@@ -1,3 +1,3 @@
 ## [1.0.0] RELEASE
 
-* A Smiley Rating Dialog package written in Dart.
+* A Smiley Rating Dialog Pro package written in Dart.

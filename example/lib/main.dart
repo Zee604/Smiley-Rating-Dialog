@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:smiley_rating_dialog/smiley_rating_dialog.dart';
+import 'package:smiley_rating_dialog_pro/smiley_rating_dialog.dart';
 
 void main() => runApp(MaterialApp(
       debugShowCheckedModeBanner: false,

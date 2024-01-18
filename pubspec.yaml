@@ -1,8 +1,8 @@
-name: smiley_rating_dialog
+name: smiley_rating_dialog_pro
 description: A new Flutter package which helps you to implement beautiful customizable Smiley Rating Dialog.
 version: 1.0.0
 
-homepage: https://github.com/mohak1283/Smiley-Rating-Dialog
+homepage: https://github.com/zee604/Smiley-Rating-Dialog
 
 environment:
   sdk: ">=3.1.4 <4.0.0"

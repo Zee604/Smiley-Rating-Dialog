@@ -1,15 +1,12 @@
-# smiley_rating_dialog
+# smiley_rating_dialog_pro
 
-A new Flutter package which helps you to implement beautiful customizable Smiley Rating Dialog in your app.
-
-[![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/mohak1283)  
-
+A new Flutter package which helps you to implement beautiful customizable Smiley Rating Dialog Pro in your app.
 
 The source code is **100% Dart**, and everything resides in the [/lib](https://github.com/mohak1283/Smiley-Rating-Dialog/tree/master/lib) folder.
 
 ## Show some :heart: and star the repo to support the project
 
- [![GitHub followers](https://img.shields.io/github/followers/mohak1283.svg?style=social&label=Follow)](https://github.com/mohak1283)  [![Twitter Follow](https://img.shields.io/twitter/follow/mohak_gupta20.svg?style=social)](https://twitter.com/mohak_gupta20)
+ [![GitHub followers](https://img.shields.io/github/followers/mohak1283.svg?style=social&label=Follow)](https://github.com/zee604) 
 
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://opensource.org/licenses/Apache-2.0)
 
@@ -28,7 +25,7 @@ Import in your project:
 import 'package:smiley_rating_dialog/smiley_rating_dialog.dart';
 ```
 
-## ❔Basic Usage
+## **Usage**
 ```dart
 class HomeScreen extends StatefulWidget {
   @override
@@ -71,29 +68,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
 This project needs you! If you would like to support this project's further development, the creator of this project or the continuous maintenance of this project, feel free to donate. Your donation is highly appreciated (and I love food, coffee and beer). Thank you!
 
-**PayPal**
-
-- **[Donate \$5](https://www.paypal.me/mohak1283/5)**: Thank's for creating this project, here's a tea (or some juice) for you!
-- **[Donate \$10](https://www.paypal.me/mohak1283/10)**: Wow, I am stunned. Let me take you to the movies!
-- **[Donate \$15](https://www.paypal.me/mohak1283/15)**: I really appreciate your work, let's grab some lunch!
-- **[Donate \$25](https://www.paypal.me/mohak1283/25)**: That's some awesome stuff you did right there, dinner is on me!
-- **[Donate \$50](https://www.paypal.me/mohak1283/50)**: I really really want to support this project, great job!
-- **[Donate \$100](https://www.paypal.me/mohak1283/100)**: You are the man! This project saved me hours (if not days) of struggle and hard work, simply awesome!
-- **[Donate \$2799](https://www.paypal.me/mohak1283/2799)**: Go buddy, buy Macbook Pro for yourself!
-
-Of course, you can also choose what you want to donate, all donations are awesome!
-
-## 👨 Developed By
-
-```
-Mohak Gupta
-```
-
-
-<a href="https://twitter.com/mohak_gupta20"><img src="https://user-images.githubusercontent.com/35039342/55471524-8e24cb00-5627-11e9-9389-58f3d4419153.png" width="60"></a>
-<a href="https://www.linkedin.com/in/mohak-gupta-885669131/"><img src="https://user-images.githubusercontent.com/35039342/55471530-94b34280-5627-11e9-8c0e-6fe86a8406d6.png" width="60"></a>
-<a href="https://www.facebook.com/mohak.gupta.9083"><img src="https://github.com/aritraroy/social-icons/blob/master/facebook-icon.png?raw=true" width="60"></a>
-
 
 # 👍 How to Contribute
 
@@ -105,7 +79,7 @@ Mohak Gupta
 
 # 📃 License
 
-    Copyright (c) 2019 Mohak Gupta
+    Copyright (c) 2024 Zee604
 
     Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

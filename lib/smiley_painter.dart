@@ -26,7 +26,6 @@ class SmileyPainter extends CustomPainter {
       case 5:
         drawWideSmileyFace(canvas, radius, center, size);
         break;
-        break;
       default:
         drawSmileyFace(canvas, radius, center, size);
     }
